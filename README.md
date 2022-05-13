@@ -1,5 +1,11 @@
 # Amazon CloudFront and Lambda@Edge OIDC Function
 
+## Note
+
+This repo is cloned from https://github.com/aws-samples/lambdaedge-openidconnect-samples, with following updated:
+
+
+
 ## Purpose
 
 Create a globally-distributed Amazon CloudFront Distribution (CDN) that will securely serve-up static files from an Amazon S3 Bucket using OpenID Connect. The purpose of this repository is to allow organizations or users to integrate with their preferred OpenID Connect compliant Identity Provider (IdP). 
