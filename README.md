@@ -2,9 +2,9 @@
 
 ## Note
 
-This repo is cloned from https://github.com/aws-samples/lambdaedge-openidconnect-samples, with following update:
+This repo is cloned from https://github.com/aws-samples/lambdaedge-openidconnect-samples, with following update in template.yaml:
 
-1. template.yaml - CFDistribution
+1. Update LogBucketName.DomainName to **LoggingBucket**.DomainName in CFDistribution
 
 ```bash
     CFDistribution:
@@ -13,7 +13,7 @@ This repo is cloned from https://github.com/aws-samples/lambdaedge-openidconnect
               Bucket: !GetAtt LoggingBucket.DomainName
 ```
 
-2. template.yaml - LambdaEdgeFunctionRole
+2. Append * at the end of Resource in policy in LambdaEdgeFunctionRole
 
 ```bash
     LambdaEdgeFunctionRole:
