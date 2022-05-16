@@ -49,7 +49,7 @@ sam deploy \
  --template-file build/packaged.yaml \
  --stack-name oidc-auth \
  --capabilities CAPABILITY_NAMED_IAM \
- --parameter-overrides BucketName=${STATIC_WEBSITE_BUCKET} LogBucketName=${YOUR_LOG_BUCKET_NAME} SecretKeyName    {YOUR_SECRETS_MANAGER_KEY_NAME}
+ --parameter-overrides BucketName=${STATIC_WEBSITE_BUCKET} LogBucketName=${YOUR_LOG_BUCKET_NAME} SecretKeyName=${YOUR_SECRETS_MANAGER_KEY_NAME}
 ```
 
 5. Create OIDC App integration in Okta with Sign-in redirect URL configured as "https://CLOUDFRONT_DIST_URL/_callback"
